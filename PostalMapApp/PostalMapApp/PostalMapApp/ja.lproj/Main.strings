@@ -1,0 +1,69 @@
+
+/* Class = "UILabel"; text = "市"; ObjectID = "1wl-Oh-hAc"; */
+"1wl-Oh-hAc.text" = "市";
+
+/* Class = "UILabel"; text = "氏名"; ObjectID = "2r2-8U-rSX"; */
+"2r2-8U-rSX.text" = "氏名";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "3ND-i3-fgF"; */
+"3ND-i3-fgF.title" = "Map";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "6BD-sN-H9P"; */
+"6BD-sN-H9P.text" = "0";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "KPk-HO-ig6"; */
+"KPk-HO-ig6.title" = "Item";
+
+/* Class = "UILabel"; text = "町"; ObjectID = "KQs-F1-9aT"; */
+"KQs-F1-9aT.text" = "町";
+
+/* Class = "UITabBarItem"; title = "リスト"; ObjectID = "LVj-O5-Udn"; */
+"LVj-O5-Udn.title" = "リスト";
+
+/* Class = "UILabel"; text = "番"; ObjectID = "NBs-hf-W98"; */
+"NBs-hf-W98.text" = "番";
+
+/* Class = "UILabel"; text = "Tag"; ObjectID = "Ul3-k6-vGO"; */
+"Ul3-k6-vGO.text" = "Tag";
+
+/* Class = "UITextView"; text = "Address"; ObjectID = "W4n-cF-17V"; */
+"W4n-cF-17V.text" = "Address";
+
+/* Class = "UIButton"; configuration.title = "変換"; ObjectID = "bAd-xG-bRn"; */
+"bAd-xG-bRn.configuration.title" = "変換";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bAd-xG-bRn"; */
+"bAd-xG-bRn.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "登録"; ObjectID = "bjh-0p-GaZ"; */
+"bjh-0p-GaZ.configuration.title" = "登録";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bjh-0p-GaZ"; */
+"bjh-0p-GaZ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "丁目"; ObjectID = "c6J-kl-jfn"; */
+"c6J-kl-jfn.text" = "丁目";
+
+/* Class = "UITabBarController"; title = "登録"; ObjectID = "eUi-kV-PCd"; */
+"eUi-kV-PCd.title" = "登録";
+
+/* Class = "UILabel"; text = "住所"; ObjectID = "efO-ed-J4a"; */
+"efO-ed-J4a.text" = "住所";
+
+/* Class = "UITabBarItem"; title = "登録"; ObjectID = "eiY-Et-BZZ"; */
+"eiY-Et-BZZ.title" = "登録";
+
+/* Class = "UILabel"; text = "都道府県"; ObjectID = "evP-jz-A5F"; */
+"evP-jz-A5F.text" = "都道府県";
+
+/* Class = "UILabel"; text = "登録数"; ObjectID = "fvO-Q7-2df"; */
+"fvO-Q7-2df.text" = "登録数";
+
+/* Class = "UITextField"; placeholder = "郵便番号を入力してください"; ObjectID = "g21-Ge-xUv"; */
+"g21-Ge-xUv.placeholder" = "郵便番号を入力してください";
+
+/* Class = "UILabel"; text = "郵便番号"; ObjectID = "knV-ct-8LH"; */
+"knV-ct-8LH.text" = "郵便番号";
+
+/* Class = "UILabel"; text = "TEL"; ObjectID = "qCi-M4-tBJ"; */
+"qCi-M4-tBJ.text" = "TEL";

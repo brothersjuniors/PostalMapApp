@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="48m-HU-V0f">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PostalAddressViewController" customModule="PostalMapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="郵便番号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knV-ct-8LH">
-                                <rect key="frame" x="50" y="164" width="293" height="30"/>
+                                <rect key="frame" x="50" y="164" width="328" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="lA2-JV-rwc"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tzn-5m-Vj3">
-                                <rect key="frame" x="166" y="294" width="48" height="34"/>
+                                <rect key="frame" x="166" y="294" width="83" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="PAw-kZ-eWj"/>
                                 </constraints>
@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCi-M4-tBJ">
-                                <rect key="frame" x="50.000000000000007" y="389" width="29.333333333333336" height="21"/>
+                                <rect key="frame" x="49.999999999999993" y="389" width="29.666666666666664" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ndp-j9-WWY"/>
                                 </constraints>
@@ -60,7 +60,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都道府県" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evP-jz-A5F">
-                                <rect key="frame" x="50" y="194" width="293" height="30"/>
+                                <rect key="frame" x="50" y="194" width="328" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="MFH-cs-lQ7"/>
                                 </constraints>
@@ -78,12 +78,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="郵便番号を入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g21-Ge-xUv">
-                                <rect key="frame" x="50" y="80" width="293" height="34"/>
+                                <rect key="frame" x="50" y="80" width="328" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efO-ed-J4a" customClass="CopyableLabel" customModule="PostalMapApp" customModuleProvider="target">
-                                <rect key="frame" x="50" y="114" width="293" height="50"/>
+                                <rect key="frame" x="50" y="114" width="328" height="50"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Iop-HP-5Eb"/>
@@ -96,7 +96,7 @@
                                 </connections>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wl-Oh-hAc">
-                                <rect key="frame" x="50" y="224" width="293" height="30"/>
+                                <rect key="frame" x="50" y="224" width="328" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="QUj-Gv-hxA"/>
                                     <constraint firstAttribute="height" constant="30" id="lQb-b9-nwD"/>
@@ -106,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="町" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQs-F1-9aT">
-                                <rect key="frame" x="50" y="254" width="293" height="30"/>
+                                <rect key="frame" x="50" y="254" width="328" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9XX-hQ-W7Z"/>
                                 </constraints>
@@ -115,7 +115,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="guQ-JN-fBA">
-                                <rect key="frame" x="50" y="354" width="293" height="35"/>
+                                <rect key="frame" x="50" y="354" width="328" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Qaj-0t-93c"/>
                                 </constraints>
@@ -123,7 +123,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNF-Af-goX">
-                                <rect key="frame" x="50" y="410" width="293" height="34"/>
+                                <rect key="frame" x="50" y="410" width="328" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="mRI-z9-EIA"/>
                                 </constraints>
@@ -149,7 +149,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjh-0p-GaZ">
-                                <rect key="frame" x="295" y="454" width="59" height="35"/>
+                                <rect key="frame" x="330" y="454" width="59" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="QCb-F0-whF"/>
                                 </constraints>
@@ -161,7 +161,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAd-xG-bRn">
-                                <rect key="frame" x="284" y="164" width="59" height="35"/>
+                                <rect key="frame" x="319" y="164" width="59" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="8zU-94-pzK"/>
                                 </constraints>
@@ -187,7 +187,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="番" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBs-hf-W98">
-                                <rect key="frame" x="240" y="299" width="18" height="21"/>
+                                <rect key="frame" x="275" y="299" width="18" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -295,7 +295,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="tcW-sp-OaM"/>
                         <segue destination="YXR-UG-UHf" kind="relationship" relationship="viewControllers" id="53T-5Z-lZr"/>
-                        <segue destination="nHK-Mf-6zx" kind="relationship" relationship="viewControllers" id="Mga-an-69C"/>
+                        <segue destination="nHK-Mf-6zx" kind="relationship" relationship="viewControllers" id="Y4f-vh-6K8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mT3-qY-L9Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -307,11 +307,9 @@
             <objects>
                 <tableViewController id="YXR-UG-UHf" customClass="ListTableViewController" customModule="PostalMapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kgI-PJ-HKF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
                             <outlet property="dataSource" destination="YXR-UG-UHf" id="1QI-yn-kyk"/>
                             <outlet property="delegate" destination="YXR-UG-UHf" id="Bs4-lA-Mzb"/>
@@ -329,51 +327,70 @@
         <!--Map-->
         <scene sceneID="cVN-MZ-Pyg">
             <objects>
-                <viewController id="nHK-Mf-6zx" sceneMemberID="viewController">
+                <viewController id="nHK-Mf-6zx" customClass="MapViewController" customModule="PostalMapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iiD-aE-00a">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Address" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W4n-cF-17V">
-                                <rect key="frame" x="0.0" y="59" width="393" height="46"/>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <rect key="frame" x="0.0" y="67" width="428" height="91"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wi-UK-RWx">
-                                <rect key="frame" x="0.0" y="140" width="393" height="629"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pitchEnabled="NO" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Wi-UK-RWx">
+                                <rect key="frame" x="0.0" y="133" width="428" height="710"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ylj-rs-9Zg" appends="YES" id="Uua-LJ-ZUc"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9yk-Zh-cWw"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="W4n-cF-17V" firstAttribute="trailing" secondItem="5Wi-UK-RWx" secondAttribute="trailing" id="5Bi-3Q-DxX"/>
-                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="top" secondItem="W4n-cF-17V" secondAttribute="bottom" constant="35" id="C8T-3X-Nia"/>
+                            <constraint firstItem="W4n-cF-17V" firstAttribute="leading" secondItem="9yk-Zh-cWw" secondAttribute="leading" id="6EM-Wr-qo4"/>
+                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="bottom" secondItem="9yk-Zh-cWw" secondAttribute="bottom" id="7tj-X0-Qkc"/>
+                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="top" secondItem="W4n-cF-17V" secondAttribute="bottom" constant="-25" id="C8T-3X-Nia"/>
+                            <constraint firstItem="W4n-cF-17V" firstAttribute="top" secondItem="9yk-Zh-cWw" secondAttribute="top" constant="20" id="ERW-XY-Ulz"/>
+                            <constraint firstItem="W4n-cF-17V" firstAttribute="trailing" secondItem="9yk-Zh-cWw" secondAttribute="trailing" id="IR0-R8-Kha"/>
+                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="trailing" secondItem="9yk-Zh-cWw" secondAttribute="trailing" id="JKb-Kf-C2k"/>
                             <constraint firstItem="9yk-Zh-cWw" firstAttribute="trailing" secondItem="5Wi-UK-RWx" secondAttribute="trailing" id="Rfk-NT-fbm"/>
-                            <constraint firstItem="W4n-cF-17V" firstAttribute="top" secondItem="iiD-aE-00a" secondAttribute="topMargin" constant="-44" id="fBk-hA-KjZ"/>
+                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="top" secondItem="9yk-Zh-cWw" secondAttribute="top" constant="86" id="aSf-oL-gE4"/>
                             <constraint firstItem="5Wi-UK-RWx" firstAttribute="leading" secondItem="9yk-Zh-cWw" secondAttribute="leading" id="it7-Yk-pqd"/>
+                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="leading" secondItem="9yk-Zh-cWw" secondAttribute="leading" id="mA0-RW-YUJ"/>
+                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="top" secondItem="9yk-Zh-cWw" secondAttribute="top" constant="86" id="mbd-yv-uLm"/>
                             <constraint firstItem="9yk-Zh-cWw" firstAttribute="bottom" secondItem="5Wi-UK-RWx" secondAttribute="bottom" id="sxM-wy-i2Q"/>
                             <constraint firstItem="W4n-cF-17V" firstAttribute="leading" secondItem="5Wi-UK-RWx" secondAttribute="leading" id="wcb-mW-WVQ"/>
-                            <constraint firstItem="9yk-Zh-cWw" firstAttribute="bottom" secondItem="W4n-cF-17V" secondAttribute="bottom" constant="664" id="whU-CT-sdp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="3ND-i3-fgF">
                         <imageReference key="image" image="map" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="longPress" destination="Ylj-rs-9Zg" id="Igr-ic-SIC"/>
+                        <outlet property="mapView" destination="5Wi-UK-RWx" id="qTU-Mz-4JA"/>
+                        <outlet property="textView" destination="W4n-cF-17V" id="kjC-y0-PNB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aks-H2-8Xc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Ylj-rs-9Zg">
+                    <connections>
+                        <action selector="longPressTapped:" destination="nHK-Mf-6zx" id="lqD-hb-vgl"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1126" y="-1642"/>
+            <point key="canvasLocation" x="464" y="-1628"/>
         </scene>
         <!--Item-->
         <scene sceneID="lla-VM-0Wg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="48m-HU-V0f" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="48m-HU-V0f" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="KPk-HO-ig6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xmd-Uo-zCP">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -390,11 +407,8 @@
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="map" catalog="system" width="128" height="112"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
