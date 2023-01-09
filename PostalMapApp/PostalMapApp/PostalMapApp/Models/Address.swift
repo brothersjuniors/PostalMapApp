@@ -15,6 +15,7 @@ import CoreLocation
         var locality = ""// 市区町村 例) 墨田区
         var subLocality = "" // 地名 例) 押上
         var thoroughfare = ""//　丁目
+        var subThoroughfare = ""
     }
     
     

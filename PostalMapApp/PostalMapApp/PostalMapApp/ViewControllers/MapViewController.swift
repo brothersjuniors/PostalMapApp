@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 import RealmSwift
 import CoreLocation
-class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRecognizerDelegate{
+class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRecognizerDelegate, MKMapViewDelegate{
     var data: Results<User>!
     var addressString = ""
     let realm = try! Realm()
@@ -19,14 +19,14 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
     var locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        mapView.delegate = self
         //現在地表示メソッド①
         locationManager.delegate = self
         //現在地表示メソッド②
         locationManager.startUpdatingLocation()  // 位置情報更新を指示
-           // アプリの使用中のみ位置情報サービスの利用許可を求める
-           locationManager.requestWhenInUseAuthorization()
-   
+        // アプリの使用中のみ位置情報サービスの利用許可を求める
+        locationManager.requestWhenInUseAuthorization()
+        
         //ユーザの向きに合わせる
         mapView.userTrackingMode = .follow
         //枠外タッチでキーボードを閉じる
@@ -34,6 +34,7 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
         tapGR.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tapGR)
         data = realm.objects(User.self)
+        
     }
     @objc func dismissKeyboard() {
         self.view.endEditing(true)
@@ -68,7 +69,9 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
                     if pm.administrativeArea != nil || pm.locality != nil || pm.subLocality != nil {
                         guard let pC = pm.postalCode else { return }
                         guard let sL = pm.subLocality else { return }
-                        self.addressString = pC + pm.administrativeArea! + pm.locality! + sL
+                        guard let tf = pm.thoroughfare else { return }
+                        guard let sTS = pm.subThoroughfare else { return }
+                        self.addressString = pC + pm.administrativeArea! + pm.locality! + sL + tf + sTS
                         // self.idokeiLabel.text =  "緯度: " + String(lat) + "経度: " + String(log)
                         let coodinate = CLLocationCoordinate2DMake(lat, log)
                         //  ピンの生成
@@ -92,9 +95,54 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
             }
         }
     }
-    func showAnnotation(lat: Double,log: Double) {
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         
+      let coodinata = view.annotation!.coordinate
         
+        convert(lat: coodinata.latitude , log: coodinata.longitude)
+        
+        let pin = MKPointAnnotation()
+        pin.coordinate = CLLocationCoordinate2DMake(coodinata.latitude,coodinata.longitude)
         
     }
+    func getAllPins()-> [User]{
+        var result:[User] = []
+        for pin in realm.objects(User.self){
+            
+            result.append(pin)
+        }
+        
+        return result
+    }
+    
+    func getAnnotations() -> [MKPointAnnotation]  {
+        let pins = getAllPins()
+        
+        var results:[MKPointAnnotation] = []
+        
+        pins.forEach { pin in
+            
+            let annotation = MKPointAnnotation()
+            //ピンにタイトル住所表示
+            //  annotation.title = self.data.[results].
+            
+            let centerCoordinate = CLLocationCoordinate2D(latitude: pin.lat , longitude:pin.log)
+            let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+            _ = MKCoordinateRegion(center: centerCoordinate, span: span)
+            //  mapView.setRegion(region, animated: true)
+            annotation.coordinate = centerCoordinate
+            results.append(annotation)
+        }
+        return results
+    }
+    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+    
+        // TODO: Pinを取得してMap上に表示する
+        let annotations = getAnnotations()
+        annotations.forEach { annotation in
+            mapView.addAnnotation(annotation)
+            
+        }
+    }
 }
+

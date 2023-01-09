@@ -44,7 +44,7 @@ class PostalAddressViewController: UIViewController {
         telTextField.keyboardType = .numberPad
         mnNumberTextField.keyboardType = .numberPad
         data = realm.objects(User.self)
-      
+        
     }
     
     //キーボードを隠す処理②
@@ -134,24 +134,13 @@ class PostalAddressViewController: UIViewController {
     }
     @IBAction func TextFieldActionBtnInactive(_ sender: Any) {
         
-                if tyoumeTextField.text == "" || banTextField.text == "" || nameTextField.text == "" || telTextField.text == "" || mnNumberTextField.text == "" {
-                    tourokuButton.isEnabled = false
-                } else {
-                    
-                    tourokuButton.isEnabled = true
-                    
-                }
+        if tyoumeTextField.text == "" || banTextField.text == "" || nameTextField.text == "" || telTextField.text == "" || mnNumberTextField.text == "" {
+            tourokuButton.isEnabled = false
+        } else {
+            
+            tourokuButton.isEnabled = true
+            
+        }
         
     }
- 
-        
-        
-   
-    
-    
-    
-    
-    
-    
-    
-}
+    }
