@@ -117,11 +117,7 @@ class PostalAddressViewController: UIViewController {
                 reLog = log
                 print("経度 : \(reLog)")
             }
-            
-            
-            
-            
-            Helper().saveDate(address: address,name: nameTextField.text!, postalCode: postal.text!, chome: tyoumeTextField.text!, ban: banTextField.text!, tel: telTextField.text!, lat: reLat, log: reLog, tag: mnNumberTextField.text!)
+           Helper().saveDate(address: address,name: nameTextField.text!, postalCode: postal.text!, chome: tyoumeTextField.text!, ban: banTextField.text!, tel: telTextField.text!, lat: reLat, log: reLog, tag: mnNumberTextField.text!)
             
             postal.text = ""
             tyoumeTextField.text = ""
