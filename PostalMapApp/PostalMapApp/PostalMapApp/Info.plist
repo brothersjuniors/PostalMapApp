@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationUsageDescription</key>
+	<string>地図アプリで現在地を取得しようとしています</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>地図アプリで現在地を取得しようとしています</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,5 +25,9 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+        <string>常に位置情報の利用を許可する理由/目的を書く</string>
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>アプリ起動時に位置情報の利用を許可する理由/目的を書く</string>
 </dict>
 </plist>

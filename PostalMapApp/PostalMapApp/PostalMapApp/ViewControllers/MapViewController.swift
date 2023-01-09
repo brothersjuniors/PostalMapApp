@@ -16,9 +16,17 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
     @IBOutlet weak var textView: UITextView!
     @IBOutlet var longPress: UILongPressGestureRecognizer!
     @IBOutlet weak var mapView: MKMapView!
-    
+    var locationManager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //現在地表示メソッド①
+        locationManager.delegate = self
+        //現在地表示メソッド②
+        locationManager.startUpdatingLocation()  // 位置情報更新を指示
+           // アプリの使用中のみ位置情報サービスの利用許可を求める
+           locationManager.requestWhenInUseAuthorization()
+   
         //ユーザの向きに合わせる
         mapView.userTrackingMode = .follow
         //枠外タッチでキーボードを閉じる
@@ -32,6 +40,13 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
     }
     func textView(_ textView: UITextView,editMenuForTextIn range: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?{
         return nil
+    }
+    func locationManager(
+        _ manager: CLLocationManager,
+        didFailWithError error: Error
+    ){
+        
+        
     }
     @IBAction func longPressTapped(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
