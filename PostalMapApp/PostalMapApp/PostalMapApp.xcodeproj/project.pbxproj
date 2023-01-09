@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD0166E32968976D00A50607 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AD0166E22968976D00A50607 /* Realm */; };
+		AD0166E52968976D00A50607 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD0166E42968976D00A50607 /* RealmSwift */; };
+		AD2F0495296B1AC600D07137 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F0493296B1AC600D07137 /* ListTableViewCell.swift */; };
+		AD2F0496296B1AC600D07137 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2F0494296B1AC600D07137 /* ListTableViewCell.xib */; };
+		AD6EEC85296A89D800F8A247 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6EEC84296A89D800F8A247 /* ListTableViewController.swift */; };
+		AD76403A2965B5740049FC56 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7640392965B5740049FC56 /* UserList.swift */; };
+		AD76403C2965BD970049FC56 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD76403B2965BD970049FC56 /* Address.swift */; };
+		AD85268E296B4E4F0062064A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85268D296B4E4F0062064A /* MapViewController.swift */; };
+		ADD701C9296951D1001E71FD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD701C8296951D1001E71FD /* Helper.swift */; };
+		ADE11BA32967D7E70010E0A3 /* CopyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE11BA22967D7E70010E0A3 /* CopyLabel.swift */; };
+		ADF8A9D32965B106007D9E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8A9D22965B106007D9E6A /* AppDelegate.swift */; };
+		ADF8A9D52965B106007D9E6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8A9D42965B106007D9E6A /* SceneDelegate.swift */; };
+		ADF8A9DA2965B106007D9E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF8A9D82965B106007D9E6A /* Main.storyboard */; };
+		ADF8A9DC2965B107007D9E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF8A9DB2965B107007D9E6A /* Assets.xcassets */; };
+		ADF8A9DF2965B107007D9E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF8A9DD2965B107007D9E6A /* LaunchScreen.storyboard */; };
+		ADF8A9E72965B134007D9E6A /* PostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8A9E62965B134007D9E6A /* PostalAddressViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD2F0493296B1AC600D07137 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		AD2F0494296B1AC600D07137 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		AD6EEC84296A89D800F8A247 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		AD7640392965B5740049FC56 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		AD76403B2965BD970049FC56 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		AD85268D296B4E4F0062064A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		ADD701C8296951D1001E71FD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		ADE11BA22967D7E70010E0A3 /* CopyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyLabel.swift; sourceTree = "<group>"; };
+		ADF8A9CF2965B106007D9E6A /* PostalMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostalMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF8A9D22965B106007D9E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADF8A9D42965B106007D9E6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADF8A9D92965B106007D9E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADF8A9DB2965B107007D9E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADF8A9DE2965B107007D9E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADF8A9E02965B107007D9E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF8A9E62965B134007D9E6A /* PostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADF8A9CC2965B106007D9E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0166E52968976D00A50607 /* RealmSwift in Frameworks */,
+				AD0166E32968976D00A50607 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADD701C529694D27001E71FD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADF8A9E62965B134007D9E6A /* PostalAddressViewController.swift */,
+				AD6EEC84296A89D800F8A247 /* ListTableViewController.swift */,
+				AD2F0493296B1AC600D07137 /* ListTableViewCell.swift */,
+				AD2F0494296B1AC600D07137 /* ListTableViewCell.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ADD701C729694D4E001E71FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADD701C8296951D1001E71FD /* Helper.swift */,
+				AD7640392965B5740049FC56 /* UserList.swift */,
+				AD76403B2965BD970049FC56 /* Address.swift */,
+				ADE11BA22967D7E70010E0A3 /* CopyLabel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADF8A9C62965B106007D9E6A = {
+			isa = PBXGroup;
+			children = (
+				ADF8A9D12965B106007D9E6A /* PostalMapApp */,
+				ADF8A9D02965B106007D9E6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADF8A9D02965B106007D9E6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADF8A9CF2965B106007D9E6A /* PostalMapApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF8A9D12965B106007D9E6A /* PostalMapApp */ = {
+			isa = PBXGroup;
+			children = (
+				ADF8A9D22965B106007D9E6A /* AppDelegate.swift */,
+				ADF8A9D42965B106007D9E6A /* SceneDelegate.swift */,
+				ADF8A9D82965B106007D9E6A /* Main.storyboard */,
+				ADF8A9DB2965B107007D9E6A /* Assets.xcassets */,
+				ADF8A9DD2965B107007D9E6A /* LaunchScreen.storyboard */,
+				ADF8A9E02965B107007D9E6A /* Info.plist */,
+				ADD701C529694D27001E71FD /* ViewControllers */,
+				ADD701C729694D4E001E71FD /* Models */,
+				AD85268D296B4E4F0062064A /* MapViewController.swift */,
+			);
+			path = PostalMapApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADF8A9CE2965B106007D9E6A /* PostalMapApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF8A9E32965B107007D9E6A /* Build configuration list for PBXNativeTarget "PostalMapApp" */;
+			buildPhases = (
+				ADF8A9CB2965B106007D9E6A /* Sources */,
+				ADF8A9CC2965B106007D9E6A /* Frameworks */,
+				ADF8A9CD2965B106007D9E6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostalMapApp;
+			packageProductDependencies = (
+				AD0166E22968976D00A50607 /* Realm */,
+				AD0166E42968976D00A50607 /* RealmSwift */,
+			);
+			productName = PostalMapApp;
+			productReference = ADF8A9CF2965B106007D9E6A /* PostalMapApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADF8A9C72965B106007D9E6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ADF8A9CE2965B106007D9E6A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = ADF8A9CA2965B106007D9E6A /* Build configuration list for PBXProject "PostalMapApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADF8A9C62965B106007D9E6A;
+			packageReferences = (
+				AD0166E12968976D00A50607 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = ADF8A9D02965B106007D9E6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADF8A9CE2965B106007D9E6A /* PostalMapApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADF8A9CD2965B106007D9E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF8A9DF2965B107007D9E6A /* LaunchScreen.storyboard in Resources */,
+				AD2F0496296B1AC600D07137 /* ListTableViewCell.xib in Resources */,
+				ADF8A9DC2965B107007D9E6A /* Assets.xcassets in Resources */,
+				ADF8A9DA2965B106007D9E6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADF8A9CB2965B106007D9E6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD76403A2965B5740049FC56 /* UserList.swift in Sources */,
+				ADD701C9296951D1001E71FD /* Helper.swift in Sources */,
+				ADE11BA32967D7E70010E0A3 /* CopyLabel.swift in Sources */,
+				AD85268E296B4E4F0062064A /* MapViewController.swift in Sources */,
+				ADF8A9E72965B134007D9E6A /* PostalAddressViewController.swift in Sources */,
+				ADF8A9D32965B106007D9E6A /* AppDelegate.swift in Sources */,
+				AD2F0495296B1AC600D07137 /* ListTableViewCell.swift in Sources */,
+				AD6EEC85296A89D800F8A247 /* ListTableViewController.swift in Sources */,
+				ADF8A9D52965B106007D9E6A /* SceneDelegate.swift in Sources */,
+				AD76403C2965BD970049FC56 /* Address.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADF8A9D82965B106007D9E6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF8A9D92965B106007D9E6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF8A9DD2965B107007D9E6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF8A9DE2965B107007D9E6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADF8A9E12965B107007D9E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADF8A9E22965B107007D9E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADF8A9E42965B107007D9E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HT5BM9TLAU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostalMapApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Shinichi-Omi.PostalMapApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADF8A9E52965B107007D9E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HT5BM9TLAU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostalMapApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Shinichi-Omi.PostalMapApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADF8A9CA2965B106007D9E6A /* Build configuration list for PBXProject "PostalMapApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF8A9E12965B107007D9E6A /* Debug */,
+				ADF8A9E22965B107007D9E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF8A9E32965B107007D9E6A /* Build configuration list for PBXNativeTarget "PostalMapApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF8A9E42965B107007D9E6A /* Debug */,
+				ADF8A9E52965B107007D9E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD0166E12968976D00A50607 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.33.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD0166E22968976D00A50607 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD0166E12968976D00A50607 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		AD0166E42968976D00A50607 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD0166E12968976D00A50607 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ADF8A9C72965B106007D9E6A /* Project object */;
+}
