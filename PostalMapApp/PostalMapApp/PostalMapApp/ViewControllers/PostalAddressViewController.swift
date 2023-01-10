@@ -33,6 +33,7 @@ class PostalAddressViewController: UIViewController {
     var data: Results<User>!
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         //枠外タッチでキーボードが隠す処理①
         let tapGR: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tapGR.cancelsTouchesInView = false
@@ -128,15 +129,5 @@ class PostalAddressViewController: UIViewController {
             registerNumber.text = String(data.count)
         }
     }
-    @IBAction func TextFieldActionBtnInactive(_ sender: Any) {
-        
-        if tyoumeTextField.text == "" || banTextField.text == "" || nameTextField.text == "" || telTextField.text == "" || mnNumberTextField.text == "" {
-            tourokuButton.isEnabled = false
-        } else {
-            
-            tourokuButton.isEnabled = true
-            
-        }
-        
-    }
+
     }

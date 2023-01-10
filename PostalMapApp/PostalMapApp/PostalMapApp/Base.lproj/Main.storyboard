@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -147,7 +148,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="登録"/>
                                 <connections>
-                                    <action selector="TextFieldActionBtnInactive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBF-iR-hzs"/>
                                     <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UL9-kg-nUS"/>
                                 </connections>
                             </button>
@@ -308,13 +308,13 @@
         <scene sceneID="k2Z-Qh-eAH">
             <objects>
                 <tableViewController id="YXR-UG-UHf" customClass="ListTableViewController" customModule="PostalMapApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kgI-PJ-HKF">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kgI-PJ-HKF">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.13624591042721099" green="0.74082490497959186" blue="0.6925060254680272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" red="0.1362459104" green="0.74082490499999998" blue="0.69250602549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexColor" systemColor="labelColor"/>
+                        <color key="sectionIndexColor" name="AccentColor"/>
                         <color key="sectionIndexBackgroundColor" red="0.95514455782312924" green="0.60134545191496591" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <connections>
                             <outlet property="dataSource" destination="YXR-UG-UHf" id="1QI-yn-kyk"/>
                             <outlet property="delegate" destination="YXR-UG-UHf" id="Bs4-lA-Mzb"/>
@@ -323,6 +323,8 @@
                     <tabBarItem key="tabBarItem" title="リスト" id="LVj-O5-Udn">
                         <imageReference key="image" image="list.bullet.rectangle.portrait" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mvO-yn-wHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -337,13 +339,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Address" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W4n-cF-17V">
-                                <rect key="frame" x="0.0" y="57" width="428" height="101"/>
+                                <rect key="frame" x="0.0" y="57" width="428" height="70"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pitchEnabled="NO" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Wi-UK-RWx">
-                                <rect key="frame" x="0.0" y="133" width="428" height="710"/>
+                                <rect key="frame" x="0.0" y="102" width="428" height="741"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <standardMapConfiguration key="preferredConfiguration" showsTraffic="YES"/>
@@ -363,10 +365,9 @@
                             <constraint firstItem="W4n-cF-17V" firstAttribute="trailing" secondItem="9yk-Zh-cWw" secondAttribute="trailing" id="IR0-R8-Kha"/>
                             <constraint firstItem="5Wi-UK-RWx" firstAttribute="trailing" secondItem="9yk-Zh-cWw" secondAttribute="trailing" id="JKb-Kf-C2k"/>
                             <constraint firstItem="9yk-Zh-cWw" firstAttribute="trailing" secondItem="5Wi-UK-RWx" secondAttribute="trailing" id="Rfk-NT-fbm"/>
-                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="top" secondItem="9yk-Zh-cWw" secondAttribute="top" constant="86" id="aSf-oL-gE4"/>
                             <constraint firstItem="5Wi-UK-RWx" firstAttribute="leading" secondItem="9yk-Zh-cWw" secondAttribute="leading" id="it7-Yk-pqd"/>
                             <constraint firstItem="5Wi-UK-RWx" firstAttribute="leading" secondItem="9yk-Zh-cWw" secondAttribute="leading" id="mA0-RW-YUJ"/>
-                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="top" secondItem="9yk-Zh-cWw" secondAttribute="top" constant="86" id="mbd-yv-uLm"/>
+                            <constraint firstItem="5Wi-UK-RWx" firstAttribute="top" secondItem="9yk-Zh-cWw" secondAttribute="top" constant="55" id="mbd-yv-uLm"/>
                             <constraint firstItem="9yk-Zh-cWw" firstAttribute="bottom" secondItem="5Wi-UK-RWx" secondAttribute="bottom" id="sxM-wy-i2Q"/>
                             <constraint firstItem="W4n-cF-17V" firstAttribute="leading" secondItem="5Wi-UK-RWx" secondAttribute="leading" id="wcb-mW-WVQ"/>
                         </constraints>
@@ -412,9 +413,9 @@
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="map" catalog="system" width="128" height="112"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

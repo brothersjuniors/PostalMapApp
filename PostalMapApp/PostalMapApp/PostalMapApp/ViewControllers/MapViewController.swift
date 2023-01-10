@@ -127,17 +127,19 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
         pins.forEach { pin in
             
             let annotation = MKPointAnnotation()
-            //ピンにタイトル住所表示
-            //  annotation.title = self.data.[results].
+          
+          
             
             let centerCoordinate = CLLocationCoordinate2D(latitude: pin.lat , longitude:pin.log)
             let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
             _ = MKCoordinateRegion(center: centerCoordinate, span: span)
             //  mapView.setRegion(region, animated: true)
             annotation.coordinate = centerCoordinate
-            //annotationにタイトルを表示
+            //ピンにaddress,nameを表示
+            
             annotation.title = pin.address
             annotation.subtitle = pin.name
+            textView.text = "　住所：\(pin.address)" + "　名前：\(pin.name)"
             results.append(annotation)
         }
         return results
