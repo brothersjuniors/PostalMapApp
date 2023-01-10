@@ -68,10 +68,10 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
                 if let pm = placeMark.first {
                     if pm.administrativeArea != nil || pm.locality != nil || pm.subLocality != nil {
                         guard let pC = pm.postalCode else { return }
-                        guard let sL = pm.subLocality else { return }
-                        guard let tf = pm.thoroughfare else { return }
+                        //guard let sL = pm.subLocality else { return }
+                     guard let tf = pm.thoroughfare else { return }
                         guard let sTS = pm.subThoroughfare else { return }
-                        self.addressString = pC + pm.administrativeArea! + pm.locality! + sL + tf + sTS
+                        self.addressString = pC + pm.administrativeArea! + pm.locality! + tf + sTS
                         // self.idokeiLabel.text =  "緯度: " + String(lat) + "経度: " + String(log)
                         let coodinate = CLLocationCoordinate2DMake(lat, log)
                         _ = realm.objects(User.self)
@@ -81,8 +81,8 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
                         pin.title = self.addressString
                         
                         //                        //住所ラベルに住所を表示
-                        self.textView.text = self.addressString
-                        //
+                      self.textView.text = self.addressString
+                      
                         //  緯度経度を指定
                         pin.coordinate = CLLocationCoordinate2DMake(lat, log)
                         //mapViewにピンを追加
@@ -104,6 +104,7 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
         
         let coodinata = view.annotation!.coordinate
         let pin = MKPointAnnotation()
+        
         pin.coordinate = CLLocationCoordinate2DMake(coodinata.latitude,coodinata.longitude)
         convert(lat: coodinata.latitude , log: coodinata.longitude)
         
@@ -139,7 +140,7 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
             
             annotation.title = pin.address
             annotation.subtitle = pin.name
-            textView.text = "　住所：\(pin.address)" + "　名前：\(pin.name)"
+       
             results.append(annotation)
         }
         return results
