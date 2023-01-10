@@ -10,12 +10,16 @@ import RealmSwift
 class ListTableViewController: UITableViewController {
     let realm = try! Realm()
     var data: Results<User>!
+    var token: NotificationToken!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        _ = realm.objects(User.self)
+        data = realm.objects(User.self)
+        token = realm.observe{ notification,realm in
+            self.tableView.reloadData()
+        }
        //下に引っ張ると更新される
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(self.refreshTable), for: UIControl.Event.valueChanged)
@@ -28,6 +32,8 @@ class ListTableViewController: UITableViewController {
          // クルクルを止める
          refreshControl?.endRefreshing()
      }
+    
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return realm.objects(User.self).count
@@ -48,6 +54,14 @@ class ListTableViewController: UITableViewController {
         
         return cell!
         
+        
+    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            Helper().deleteData(user: data[indexPath.row], token: token)
+        }
+        
+        tableView.reloadData()
         
     }
     /*

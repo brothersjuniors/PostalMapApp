@@ -8,6 +8,7 @@
 import Foundation
 
 import RealmSwift
+import UserNotifications
 
 class Helper{
     let realm = try! Realm()
@@ -27,11 +28,12 @@ class Helper{
         }
   
     }
-    func deleteData(user:User){
- 
-        try! realm.write(){
+    func deleteData(user:User,token:NotificationToken){
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [user.tag])
+        try! realm.write(withoutNotifying: [token]){
             realm.delete(user)
         }
+        
     }
 }
 

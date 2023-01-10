@@ -79,10 +79,10 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
                         let pin = MKPointAnnotation()
                         //ピンにタイトル住所表示
                         pin.title = self.addressString
-                    
-//                        //住所ラベルに住所を表示
-                      self.textView.text = self.addressString
-//
+                        
+                        //                        //住所ラベルに住所を表示
+                        self.textView.text = self.addressString
+                        //
                         //  緯度経度を指定
                         pin.coordinate = CLLocationCoordinate2DMake(lat, log)
                         //mapViewにピンを追加
@@ -99,58 +99,58 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
         }
     }
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-       let realm = try! Realm()
-        let user = realm.objects(User.self)
-    
+        let realm = try! Realm()
+        _ = realm.objects(User.self)
+        
         let coodinata = view.annotation!.coordinate
         let pin = MKPointAnnotation()
         pin.coordinate = CLLocationCoordinate2DMake(coodinata.latitude,coodinata.longitude)
         convert(lat: coodinata.latitude , log: coodinata.longitude)
-      
-       
+        
+        
     }
-        func getAllPins()-> [User]{
-            var result:[User] = []
-            for pin in realm.objects(User.self){
-                
-                result.append(pin)
-            }
+    func getAllPins()-> [User]{
+        var result:[User] = []
+        for pin in realm.objects(User.self){
             
-            return result
+            result.append(pin)
         }
         
-        func getAnnotations() -> [MKPointAnnotation]  {
-            let pins = getAllPins()
-            
-            var results:[MKPointAnnotation] = []
-            
-            pins.forEach { pin in
-                
-                let annotation = MKPointAnnotation()
-                //ピンにタイトル住所表示
-                //  annotation.title = self.data.[results].
-                
-                let centerCoordinate = CLLocationCoordinate2D(latitude: pin.lat , longitude:pin.log)
-                let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-                _ = MKCoordinateRegion(center: centerCoordinate, span: span)
-                //  mapView.setRegion(region, animated: true)
-                annotation.coordinate = centerCoordinate
-                //annotationにタイトルを表示
-                annotation.title = pin.address
-                annotation.subtitle = pin.name
-                results.append(annotation)
-            }
-            return results
-        }
-        func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
-            
-            // TODO: Pinを取得してMap上に表示する
-            let annotations = getAnnotations()
-            annotations.forEach { annotation in
-                mapView.addAnnotation(annotation)
-                
-            }
-        }
+        return result
     }
     
+    func getAnnotations() -> [MKPointAnnotation]  {
+        let pins = getAllPins()
+        
+        var results:[MKPointAnnotation] = []
+        
+        pins.forEach { pin in
+            
+            let annotation = MKPointAnnotation()
+            //ピンにタイトル住所表示
+            //  annotation.title = self.data.[results].
+            
+            let centerCoordinate = CLLocationCoordinate2D(latitude: pin.lat , longitude:pin.log)
+            let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+            _ = MKCoordinateRegion(center: centerCoordinate, span: span)
+            //  mapView.setRegion(region, animated: true)
+            annotation.coordinate = centerCoordinate
+            //annotationにタイトルを表示
+            annotation.title = pin.address
+            annotation.subtitle = pin.name
+            results.append(annotation)
+        }
+        return results
+    }
+    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+        
+        // TODO: Pinを取得してMap上に表示する
+        let annotations = getAnnotations()
+        annotations.forEach { annotation in
+            mapView.addAnnotation(annotation)
+            
+        }
+    }
+}
+
 
