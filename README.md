@@ -1,4 +1,4 @@
-# SPEED DRIVER!
+# SPEED DRIVER
 対象は
 車、徒歩等で移動する際普段地図アプリを使用している全ての方
 
