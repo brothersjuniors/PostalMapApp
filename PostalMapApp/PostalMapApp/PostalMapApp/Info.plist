@@ -2,12 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDisplayName</key>
+	<string>PostalMap</string>
 	<key>NSLocationUsageDescription</key>
-	<string>地図アプリで現在地を取得しようとしています</string>
+	<string>PostalMapが現在地を取得しようとしています</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>地図アプリで現在地を取得しようとしています</string>
+	<string>ユーザーがアプリを初めてくと、システムは標準のアラートを表示します。</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key>UIApplicationSupportsTabbedSceneCollection</key>
+		<false/>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
@@ -25,9 +29,7 @@
 			</array>
 		</dict>
 	</dict>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-        <string>常に位置情報の利用を許可する理由/目的を書く</string>
-        <key>NSLocationWhenInUseUsageDescription</key>
-        <string>アプリ起動時に位置情報の利用を許可する理由/目的を書く</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>現在の正確な位置情報を表示する為、アプリ使用中はユーザーの位置情報を常に取得します。</string>
 </dict>
 </plist>

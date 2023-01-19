@@ -112,7 +112,7 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
             let annotation = MKPointAnnotation()
             let centerCoordinate = CLLocationCoordinate2D(latitude: pin.lat , longitude:pin.log)
             let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-            let region = MKCoordinateRegion(center: centerCoordinate, span: span)
+            _ = MKCoordinateRegion(center: centerCoordinate, span: span)
             annotation.coordinate = centerCoordinate
             //ピンにaddress,nameを表示
             annotation.title = pin.address
