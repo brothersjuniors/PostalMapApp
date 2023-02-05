@@ -15,6 +15,7 @@ class PostalAddressViewController: UIViewController {
     var reLog: Double = 0.0
     let realm = try! Realm()
     private var addressString = ""
+ 
     @IBOutlet var longtap: UILongPressGestureRecognizer!
     
     @IBOutlet weak var tourokuButton: UIButton!
@@ -24,7 +25,7 @@ class PostalAddressViewController: UIViewController {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var choLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var tyoumeTextField: UITextField!
+    @IBOutlet weak var chomeTextField: UITextField!
     @IBOutlet weak var banTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var telTextField: UITextField!
@@ -33,14 +34,14 @@ class PostalAddressViewController: UIViewController {
     var data: Results<User>!
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        //枠外タッチでキーボードが隠す処理①
+    
+        //✳️枠外タッチでキーボードが隠す処理①
         let tapGR: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tapGR.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tapGR)
-        //テキストフィールドで使用するkeyboardの設定
+        //✳️テキストフィールドで使用するkeyboardの設定
         postal.keyboardType = .numberPad
-        tyoumeTextField.keyboardType = .numberPad
+        chomeTextField.keyboardType = .numberPad
         banTextField.keyboardType = .numberPad
         telTextField.keyboardType = .numberPad
         mnNumberTextField.keyboardType = .numberPad
@@ -48,11 +49,11 @@ class PostalAddressViewController: UIViewController {
         
     }
     
-    //キーボードを隠す処理②
+    //✳️キーボードを隠す処理②
     @objc func dismissKeyboard() {
         self.view.endEditing(true)
     }
-    //郵便番号から住所を表示
+    //✳️郵便番号から住所を表示
     @IBAction func convertButton(_ sender: Any) {
         let postalCode = postal.text!
         convertAddress(from: postalCode) { [self] address, error in
@@ -71,7 +72,7 @@ class PostalAddressViewController: UIViewController {
             postal.text = ""
         }
     }
-    //郵便番号から緯度経度と住所変換
+    //✳️郵便番号から緯度経度と住所変換
     func convertAddress(from postalCode: String, completion: @escaping (Address?, Error?) -> Void) {
         CLGeocoder().geocodeAddressString(postalCode) { (placemarks, error) in
             if let error = error {
@@ -88,10 +89,10 @@ class PostalAddressViewController: UIViewController {
                         completion(nil, error)
                         return
                     }
-                    //経度
+                    //✳️経度
                     lat = String(location.coordinate.latitude)
                     print(lat)
-                    //緯度
+                    //✳️緯度
                     log = String(location.coordinate.longitude)
                     print(log)
                     var address: Address = Address()
@@ -103,25 +104,23 @@ class PostalAddressViewController: UIViewController {
             }
         }
     }
-    //n丁目とn番地を取得した上で再度緯度経度を取得して、realmに保存する
+    //✳️n丁目とn番地を取得した上で再度緯度経度を取得して、realmに保存する
     @IBAction func registerButton(_ sender: Any) {
         
-        let chomeString = tyoumeTextField.text!
+        let chomeString = chomeTextField.text!
         let banString = banTextField.text!
         let address = addressString+chomeString+"-"+banString
         CLGeocoder().geocodeAddressString(address) { [self] placemarks, error in
             if let lat = placemarks?.first?.location?.coordinate.latitude {
                 reLat = lat
-                print("緯度 : \(reLat)")
             }
             if let log = placemarks?.first?.location?.coordinate.longitude {
                 reLog = log
-                print("経度 : \(reLog)")
             }
-            Helper().saveDate(address: address,name: nameTextField.text!, postalCode: postal.text!, chome: tyoumeTextField.text!, ban: banTextField.text!, tel: telTextField.text!, lat: reLat, log: reLog, tag: mnNumberTextField.text!)
-            
+            Helper().saveDate(address: address,name: nameTextField.text!, postalCode: postalLabel.text!, chome: chomeTextField.text!, ban: banTextField.text!, tel: telTextField.text!, lat: reLat, log: reLog, tag: mnNumberTextField.text!)
+          
             postal.text = ""
-            tyoumeTextField.text = ""
+            chomeTextField.text = ""
             banTextField.text = ""
             telTextField.text = ""
             mnNumberTextField.text = ""

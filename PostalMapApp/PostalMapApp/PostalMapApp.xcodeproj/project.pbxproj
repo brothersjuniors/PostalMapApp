@@ -23,9 +23,12 @@
 		ADF8A9DC2965B107007D9E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF8A9DB2965B107007D9E6A /* Assets.xcassets */; };
 		ADF8A9DF2965B107007D9E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF8A9DD2965B107007D9E6A /* LaunchScreen.storyboard */; };
 		ADF8A9E72965B134007D9E6A /* PostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8A9E62965B134007D9E6A /* PostalAddressViewController.swift */; };
+		C5C4DB906CDE8D8525CE525C /* Pods_PostalMapApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5836EE1D4F6A7E82C26B606 /* Pods_PostalMapApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26624BB53BE3E4F3D881E36F /* Pods-PostalMapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostalMapApp.release.xcconfig"; path = "Target Support Files/Pods-PostalMapApp/Pods-PostalMapApp.release.xcconfig"; sourceTree = "<group>"; };
+		468BC8795BEF2357F6C65BB2 /* Pods-PostalMapApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostalMapApp.debug.xcconfig"; path = "Target Support Files/Pods-PostalMapApp/Pods-PostalMapApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2F0493296B1AC600D07137 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		AD2F0494296B1AC600D07137 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		AD66562F296BD301006EC4A6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		ADF8A9DE2965B107007D9E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADF8A9E02965B107007D9E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADF8A9E62965B134007D9E6A /* PostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressViewController.swift; sourceTree = "<group>"; };
+		F5836EE1D4F6A7E82C26B606 /* Pods_PostalMapApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostalMapApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +56,30 @@
 			files = (
 				AD0166E52968976D00A50607 /* RealmSwift in Frameworks */,
 				AD0166E32968976D00A50607 /* Realm in Frameworks */,
+				C5C4DB906CDE8D8525CE525C /* Pods_PostalMapApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53E02F594A484FDA907794D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5836EE1D4F6A7E82C26B606 /* Pods_PostalMapApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7E6DBD14BB5352D472041F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				468BC8795BEF2357F6C65BB2 /* Pods-PostalMapApp.debug.xcconfig */,
+				26624BB53BE3E4F3D881E36F /* Pods-PostalMapApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ADD701C529694D27001E71FD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +108,8 @@
 			children = (
 				ADF8A9D12965B106007D9E6A /* PostalMapApp */,
 				ADF8A9D02965B106007D9E6A /* Products */,
+				A7E6DBD14BB5352D472041F4 /* Pods */,
+				53E02F594A484FDA907794D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +143,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADF8A9E32965B107007D9E6A /* Build configuration list for PBXNativeTarget "PostalMapApp" */;
 			buildPhases = (
+				8E2B732B0359D462024FD58A /* [CP] Check Pods Manifest.lock */,
 				ADF8A9CB2965B106007D9E6A /* Sources */,
 				ADF8A9CC2965B106007D9E6A /* Frameworks */,
 				ADF8A9CD2965B106007D9E6A /* Resources */,
@@ -186,6 +211,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E2B732B0359D462024FD58A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PostalMapApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ADF8A9CB2965B106007D9E6A /* Sources */ = {
@@ -346,26 +396,32 @@
 		};
 		ADF8A9E42965B107007D9E6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 468BC8795BEF2357F6C65BB2 /* Pods-PostalMapApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HT5BM9TLAU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PostalMapApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PostalMap;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "ユーザーがアプリを初めてくと、システムは標準のアラートを表示します。";
+				INFOPLIST_KEY_NSLocationUsageDescription = "PostalMapが現在地を取得しようとしています";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "現在の正確な位置情報を表示する為、アプリ使用中はユーザーの位置情報を常に取得します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Shinichi-Omi.PostalMapApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -376,26 +432,32 @@
 		};
 		ADF8A9E52965B107007D9E6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26624BB53BE3E4F3D881E36F /* Pods-PostalMapApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HT5BM9TLAU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PostalMapApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PostalMap;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "ユーザーがアプリを初めてくと、システムは標準のアラートを表示します。";
+				INFOPLIST_KEY_NSLocationUsageDescription = "PostalMapが現在地を取得しようとしています";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "現在の正確な位置情報を表示する為、アプリ使用中はユーザーの位置情報を常に取得します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Shinichi-Omi.PostalMapApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

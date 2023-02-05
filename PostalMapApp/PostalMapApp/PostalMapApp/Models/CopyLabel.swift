@@ -34,6 +34,6 @@ class CopyableLabel: UILabel
     /// - Parameter recognizer: UIGestureRecognizer
     @objc func handleLongPressGesture(_ recognizer: UIGestureRecognizer)
     {
-        // あとでここに追記する
+        
     }
 }

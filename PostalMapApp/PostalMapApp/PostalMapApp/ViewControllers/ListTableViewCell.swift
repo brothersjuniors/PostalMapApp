@@ -10,6 +10,7 @@ import UIKit
 class ListTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var postalLabel: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var Address: UILabel!
     @IBOutlet weak var Phone: UILabel!

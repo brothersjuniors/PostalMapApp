@@ -20,7 +20,7 @@ class ListTableViewController: UITableViewController {
         token = realm.observe{ notification,realm in
             self.tableView.reloadData()
         }
-       //下に引っ張ると更新される
+        //✳️下に引っ張ると更新される
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(self.refreshTable), for: UIControl.Event.valueChanged)
            self.refreshControl = refreshControl
@@ -29,7 +29,7 @@ class ListTableViewController: UITableViewController {
     @objc func refreshTable() {
         tableView.reloadData()
     
-         // クルクルを止める
+        //✳️クルクルを止める
          refreshControl?.endRefreshing()
      }
     
@@ -50,8 +50,9 @@ class ListTableViewController: UITableViewController {
         cell?.Address.text = data[indexPath.row].address
         cell?.number.text = data[indexPath.row].tag
         cell?.Phone.text = data[indexPath.row].tel
-        
-        
+        cell?.postalLabel.text = data[indexPath.row].postalCode
+      
+
         return cell!
         
         

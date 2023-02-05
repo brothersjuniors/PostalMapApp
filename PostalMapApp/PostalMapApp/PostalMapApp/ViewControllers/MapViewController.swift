@@ -20,15 +20,22 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
+        mapView.isRotateEnabled = false
+  
+       
+ 
+        //✳️ユーザの向きに合わせる
+        mapView.setUserTrackingMode(MKUserTrackingMode.followWithHeading, animated: true)
+    
         //現在地表示メソッド①
         locationManager.delegate = self
-        //現在地表示メソッド②
+        //✳️現在地表示メソッド②
         locationManager.startUpdatingLocation()  // 位置情報更新を指示
-        // アプリの使用中のみ位置情報サービスの利用許可を求める
+        //✳️アプリの使用中のみ位置情報サービスの利用許可を求める
         locationManager.requestWhenInUseAuthorization()
-        //ユーザの向きに合わせる
-        mapView.userTrackingMode = .follow
-        //枠外タッチでキーボードを閉じる
+       
+
+        //✳️枠外タッチでキーボードを閉じる
         let tapGR: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tapGR.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tapGR)
@@ -69,21 +76,21 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
                         self.addressString = pC + pm.administrativeArea! + pm.locality! + tf + sTS
                         let coodinate = CLLocationCoordinate2DMake(lat, log)
                         data = realm.objects(User.self)
-                        //  ピンの生成
+                        //✳️ピンの生成
                         let pin = MKPointAnnotation()
-                        //ピンにタイトル住所表示
+                        //✳️ピンにタイトル住所表示
                         pin.title = self.addressString
-                        //住所ラベルに住所を表示
+                        //✳️住所ラベルに住所を表示
                         self.textView.text = self.addressString
-                        //  緯度経度を指定
+                        //✳️  緯度経度を指定
                         pin.coordinate = CLLocationCoordinate2DMake(lat, log)
-                        //mapViewにピンを追加
+                        //✳️mapViewにピンを追加
                         self.mapView.addAnnotation(pin)
-                        //表示範囲設定
+                        //✳️表示範囲設定
                         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-                        //領域設定
+                        //✳️領域設定
                         let region = MKCoordinateRegion(center: coodinate, span: span)
-                        //領域をmapViewに反映
+                        //✳️領域をmapViewに反映
                         self.mapView.setRegion(region, animated: true)
                     }
                 }
@@ -114,16 +121,16 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,UIGestureRec
             let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
             _ = MKCoordinateRegion(center: centerCoordinate, span: span)
             annotation.coordinate = centerCoordinate
-            //ピンにaddress,nameを表示
+            //✳️ピンにaddress,nameを表示
             annotation.title = pin.address
             annotation.subtitle = pin.name
             results.append(annotation)
         }
-        //  textView.text = pin.address + pin.name + pin.tag + pin.tel
+        //✳️ textView.text = pin.address + pin.name + pin.tag + pin.tel
         return results
     }
     func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
-        // TODO: Pinを取得してMap上に表示する
+        //✳️TODO: Pinを取得してMap上に表示する
         let annotations = getAnnotations()
         annotations.forEach { annotation in
             mapView.addAnnotation(annotation)

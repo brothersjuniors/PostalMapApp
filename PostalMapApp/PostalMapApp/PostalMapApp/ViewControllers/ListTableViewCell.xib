@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,83 +18,104 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="名前：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gz3-jc-3Lh">
-                        <rect key="frame" x="25" y="20" width="52" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="15" y="20" width="51" height="17"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                         <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWe-xo-8oD">
-                        <rect key="frame" x="25" y="61" width="52" height="34"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="電話：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFT-mO-8fG">
-                        <rect key="frame" x="25" y="115" width="52" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzp-nB-06G">
-                        <rect key="frame" x="391" y="25" width="27" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHf-KZ-54E">
-                        <rect key="frame" x="433" y="25" width="62" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="住所：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KP-gz-PRf">
+                        <rect key="frame" x="15" y="62" width="51" height="17"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                         <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-T5-bqN">
-                        <rect key="frame" x="87" y="20" width="45" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="66" y="19" width="50.666666666666657" height="18"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
                         <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Av-Ok-c0Y">
-                        <rect key="frame" x="87" y="61" width="45" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghw-lE-ixa">
+                        <rect key="frame" x="66" y="61" width="73.666666666666686" height="18"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
+                        <color key="textColor" red="0.1294117719" green="0.1294117719" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="電話：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fd-Tv-B7G">
+                        <rect key="frame" x="15" y="104" width="51" height="17"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                         <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbj-v7-Veq">
-                        <rect key="frame" x="87" y="102" width="45" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Tel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbj-v7-Veq">
+                        <rect key="frame" x="66" y="103" width="25.333333333333329" height="18"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
+                        <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="〒：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAa-ZA-NhB">
+                        <rect key="frame" x="394" y="19" width="34" height="17"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                        <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpu-rh-f2C">
+                        <rect key="frame" x="428" y="17" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHf-KZ-54E">
+                        <rect key="frame" x="429.66666666666669" y="105" width="38.333333333333314" height="17"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                        <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzp-nB-06G">
+                        <rect key="frame" x="394" y="105" width="35" height="17"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                         <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" systemColor="systemYellowColor"/>
                 <constraints>
-                    <constraint firstItem="Fzp-nB-06G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="421-wU-LDi"/>
-                    <constraint firstItem="DFT-mO-8fG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="4jp-E1-ydP"/>
-                    <constraint firstItem="7Av-Ok-c0Y" firstAttribute="leading" secondItem="xWe-xo-8oD" secondAttribute="trailing" constant="10" id="IFB-Wa-bHY"/>
-                    <constraint firstItem="xWe-xo-8oD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="JUO-g5-xYf"/>
-                    <constraint firstItem="xWe-xo-8oD" firstAttribute="top" secondItem="Gz3-jc-3Lh" secondAttribute="bottom" constant="20" id="Kdr-M7-XjK"/>
-                    <constraint firstAttribute="bottom" secondItem="DFT-mO-8fG" secondAttribute="bottom" constant="20" id="NW1-Ru-FA8"/>
+                    <constraint firstItem="5fd-Tv-B7G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3fQ-pF-Fhm"/>
+                    <constraint firstAttribute="trailing" secondItem="Fzp-nB-06G" secondAttribute="trailing" constant="89" id="4WZ-Yu-K5z"/>
+                    <constraint firstItem="ghw-lE-ixa" firstAttribute="leading" secondItem="2KP-gz-PRf" secondAttribute="trailing" id="8nD-Dt-Got"/>
+                    <constraint firstItem="Fzp-nB-06G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="105" id="AEq-w5-I7o"/>
+                    <constraint firstItem="2KP-gz-PRf" firstAttribute="top" secondItem="Gz3-jc-3Lh" secondAttribute="bottom" constant="25" id="EeM-l5-0Bg"/>
+                    <constraint firstItem="fbj-v7-Veq" firstAttribute="leading" secondItem="5fd-Tv-B7G" secondAttribute="trailing" id="H82-Zq-qj5"/>
+                    <constraint firstItem="5fd-Tv-B7G" firstAttribute="top" secondItem="2KP-gz-PRf" secondAttribute="bottom" constant="25" id="HfY-C1-HlX"/>
+                    <constraint firstAttribute="trailing" secondItem="IHf-KZ-54E" secondAttribute="trailing" constant="50" id="T51-vW-Gb9"/>
                     <constraint firstItem="Gz3-jc-3Lh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="YCN-9c-OSj"/>
-                    <constraint firstItem="fbj-v7-Veq" firstAttribute="leading" secondItem="DFT-mO-8fG" secondAttribute="trailing" constant="10" id="bFU-lx-yJA"/>
-                    <constraint firstItem="Gz3-jc-3Lh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="duR-qX-TK9"/>
-                    <constraint firstItem="DFT-mO-8fG" firstAttribute="top" secondItem="xWe-xo-8oD" secondAttribute="bottom" constant="20" id="fE4-IR-Tzr"/>
-                    <constraint firstAttribute="trailing" secondItem="Fzp-nB-06G" secondAttribute="trailing" constant="100" id="g4p-ux-aNP"/>
-                    <constraint firstItem="IHf-KZ-54E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="hnt-G3-L02"/>
-                    <constraint firstItem="IHf-KZ-54E" firstAttribute="leading" secondItem="Fzp-nB-06G" secondAttribute="trailing" constant="15" id="mER-p8-E1B"/>
-                    <constraint firstItem="fbj-v7-Veq" firstAttribute="top" secondItem="7Av-Ok-c0Y" secondAttribute="bottom" constant="20" id="pEY-Bt-y0g"/>
-                    <constraint firstItem="DXi-T5-bqN" firstAttribute="leading" secondItem="Gz3-jc-3Lh" secondAttribute="trailing" constant="10" id="sEN-5j-XXm"/>
-                    <constraint firstItem="DXi-T5-bqN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="sQk-oi-FQV"/>
-                    <constraint firstItem="7Av-Ok-c0Y" firstAttribute="top" secondItem="DXi-T5-bqN" secondAttribute="bottom" constant="20" id="zDt-kc-6Ho"/>
+                    <constraint firstItem="fbj-v7-Veq" firstAttribute="top" secondItem="ghw-lE-ixa" secondAttribute="bottom" constant="24" id="awZ-t2-pwN"/>
+                    <constraint firstItem="Gz3-jc-3Lh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="duR-qX-TK9"/>
+                    <constraint firstAttribute="trailing" secondItem="TAa-ZA-NhB" secondAttribute="trailing" constant="90" id="edS-xz-YUU"/>
+                    <constraint firstItem="TAa-ZA-NhB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="iZz-OR-yrh"/>
+                    <constraint firstItem="2KP-gz-PRf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="mlk-tL-xYs"/>
+                    <constraint firstItem="Mpu-rh-f2C" firstAttribute="leading" secondItem="TAa-ZA-NhB" secondAttribute="trailing" id="nez-gU-WD1"/>
+                    <constraint firstItem="Mpu-rh-f2C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="qdm-IE-mlr"/>
+                    <constraint firstItem="DXi-T5-bqN" firstAttribute="leading" secondItem="Gz3-jc-3Lh" secondAttribute="trailing" id="sEN-5j-XXm"/>
+                    <constraint firstItem="DXi-T5-bqN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="sQk-oi-FQV"/>
+                    <constraint firstItem="ghw-lE-ixa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="61" id="u8U-cy-Qif"/>
+                    <constraint firstItem="IHf-KZ-54E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="105" id="uE7-at-Jgc"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="Address" destination="7Av-Ok-c0Y" id="Rqo-cB-cj4"/>
+                <outlet property="Address" destination="ghw-lE-ixa" id="yQZ-qd-ezK"/>
                 <outlet property="Phone" destination="fbj-v7-Veq" id="YqA-gp-Jtx"/>
                 <outlet property="name" destination="DXi-T5-bqN" id="44W-TA-rNo"/>
                 <outlet property="number" destination="IHf-KZ-54E" id="XY3-sW-x9C"/>
+                <outlet property="postalLabel" destination="Mpu-rh-f2C" id="ZgC-rW-Nhz"/>
             </connections>
-            <point key="canvasLocation" x="127" y="-31"/>
+            <point key="canvasLocation" x="-583.20610687022895" y="-159.1549295774648"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
