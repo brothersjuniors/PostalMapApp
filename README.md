@@ -40,4 +40,3 @@ PostalMap　利用規約・プライバシーポリシー
 
 連絡先メールアドレス　：　siniti4412@gmail.com
 
-google.com, pub-7983995856043178, DIRECT, f08c47fec0942fa0
